@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Escolha seu Inicial</title>
+  <link rel="stylesheet" href="../CSS/escolha_inicial.css">
+  <link rel="preload" href="../Imagens/sapato.png" as="image">
+  <link rel="preload" href="../Imagens/Sarue.png" as="image">
+  <link rel="preload" href="../Imagens/gato barcelona.png" as="image">
+  <link rel="preload" href="../Imagens/Gato sombrio.png" as="image">
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  
+  <div class="wrap">
+    <div class="card">
+      <div class="top">
+        <div class="title">ESCOLHA SEU<br>INICIAL</div>
+        <div class="subtitle">SELECIONE UM DOS<br>QUATRO PARA INICIAR</div>
+      </div>
+
+      <div class="grid" id="startersGrid" aria-label="Lista de iniciais">
+        <div class="starter" data-id="sapato" data-name="Sapato" data-img="../Imagens/sapato.png" tabindex="0" role="button" aria-label="Selecionar Sapato">
+          <div class="pokeball-icon"></div>
+          <img class="img" src="../Imagens/sapato.png" alt="Sapato" />
+          <div class="name">SAPATO</div>
+        </div>
+        <div class="starter" data-id="sarue" data-name="Sarue" data-img="../Imagens/Sarue.png" tabindex="0" role="button" aria-label="Selecionar Sarue">
+          <div class="pokeball-icon"></div>
+          <img class="img" src="../Imagens/Sarue.png" alt="Sarue" />
+          <div class="name">SARUE</div>
+        </div>
+        <div class="starter" data-id="gato_barcelona" data-name="Gato Barcelona" data-img="../Imagens/gato barcelona.png" tabindex="0" role="button" aria-label="Selecionar Gato Barcelona">
+          <div class="pokeball-icon"></div>
+          <img class="img" src="../Imagens/gato barcelona.png" alt="Gato Barcelona" />
+          <div class="name">GATO<br>BARCELONA</div>
+        </div>
+        <div class="starter" data-id="gato_sombrio" data-name="Gato Sombrio" data-img="../Imagens/Gato sombrio.png" tabindex="0" role="button" aria-label="Selecionar Gato Sombrio">
+          <div class="pokeball-icon"></div>
+          <img class="img" src="../Imagens/Gato sombrio.png" alt="Gato Sombrio" />
+          <div class="name">GATO<br>SOMBRIO</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="btnVoltar" class="btn btn-secondary" type="button">← VOLTAR</button>
+        <button id="btnConfirmar" class="btn btn-primary" type="button" disabled>INICIAR! →</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../JavaScript/escolha_inicial.js"></script>
+  
+  <div class="starter-preview" id="starterPreviewBox">
+    <img id="starterPreview" alt="Inicial escolhido" />
+  </div>
+</body>
+</html>

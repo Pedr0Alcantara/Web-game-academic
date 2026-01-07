@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sobre.css">
+    <title>Como Jogar - Feimon Farm</title>
+</head>
+<body>
+    <div class="container">
+        <div class="stars" id="stars"></div>
+
+        <div class="pokeball pokeball-1"></div>
+        <div class="pokeball pokeball-2"></div>
+
+        <div class="header">
+            <div class="logo">FEIMON <span>FARM</span></div>
+            <div class="nav-buttons">
+                <a href="./Trabalho.html" class="nav-btn">← VOLTAR</a>
+                <a href="./informações.html" class="nav-btn">INFORMAÇÕES</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="story-box">
+                <h2>HISTÓRIA</h2>
+                <p>Você é uma jovem viciada em jogos de pokemon, porem nunca teve o dinheiro para comprar um jogo barato da nintendo</p>
+                <p>Em suas navegações pela deepweb em busca de jogos piratas de pokemon você acaba se deparando com FeimonFarm, um incrivel jogo no estilo que você ama</p>
+                <p>Mas nem tudo são flores, ao baixar o jogo você é transportada para o mesmo, seu objetivo é pegar 1000 pontos para voltar a vida real ou ficara presa PARA SEMPRE</p>
+                <p>Que os jogos comecem</p>
+            </div>
+
+            <div class="controls-box">
+                <h2>CONTROLES</h2>
+                <div class="controls-grid">
+                    <div class="control-item">
+                        <div class="control-key">W</div>
+                        <div class="control-desc">Mover para Cima</div>
+                    </div>
+                    <div class="control-item">
+                        <div class="control-key">S</div>
+                        <div class="control-desc">Mover para Baixo</div>
+                    </div>
+                    <div class="control-item">
+                        <div class="control-key">A</div>
+                        <div class="control-desc">Mover para Esquerda</div>
+                    </div>
+                    <div class="control-item">
+                        <div class="control-key">D</div>
+                        <div class="control-desc">Mover para Direita</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="objective-box">
+                <h2> OBJETIVOS</h2>
+                <ul class="objective-list">
+                    <li>Plantar para ganhar pontos, cada colheita feita 10 pontos, um metodo lento porem seguro</li>
+                    <li>Vencer Batalhas, a cada batalha vencida + 100 PONTOS!! Um metodo rapido porem desafiador, ao perder -200 pontos</li>
+                    <li>Voltar ao mundo real ao chegar em 1000 pontos e assim vencendo feimon farm</li>
+                </ul>
+            </div>
+
+            <button class="thanks-btn" onclick="alert('Obrigado por jogar Feimon Farm! ')">
+                OBRIGADO POR JOGAR 
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 50; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
