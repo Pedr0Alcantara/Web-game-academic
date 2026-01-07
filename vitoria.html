@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="vitoria.css">
+  <title>Vitória Pokémon!</title>
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  
+  <div id="confetti"></div>
+  
+  <div class="container">
+    
+    <h1>PARABENS!<br>VOCÊ É UM<br>MESTRE FEIMON!</h1>
+    
+    <div class="score-box">
+      <div class="score-text">PONTUAÇÃO FINAL</div>
+      <div class="score-number">1000</div>
+    </div>
+    
+    <div class="message">
+      INCRÍVEL! VOCÊ<br>
+      CONSEGUIU TODOS<br>
+      OS PONTOS! <br>
+      AGORA PODE VOLTAR PARA CASA
+    </div>
+    
+    <button class="btn" id="btnHome">CASA</button>
+  </div>
+
+  <script>
+    const starsContainer = document.getElementById('stars');
+    for(let i = 0; i < 50; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.width = Math.random() * 3 + 'px';
+      star.style.height = star.style.width;
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.animationDelay = Math.random() * 2 + 's';
+      starsContainer.appendChild(star);
+    }
+    
+    const confettiContainer = document.getElementById('confetti');
+    const colors = ['#ffde00', '#cc0000', '#2a75bb', '#ffffff', '#4caf50'];
+    
+    for(let i = 0; i < 30; i++) {
+      const confetti = document.createElement('div');
+      confetti.className = 'confetti';
+      confetti.style.left = Math.random() * 100 + '%';
+      confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.animationDelay = Math.random() * 3 + 's';
+      confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+      confettiContainer.appendChild(confetti);
+    }
+    
+    document.getElementById('btnHome').addEventListener('click', () => {
+      window.location.href = 'HTML/Trabalho.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../CSS/game.css">
+    <title>Jogo</title>
+    
+    
+</head>
+<body>
+    <div id="menu" style="display:none;"></div>
+
+    <div id="pointsBar" style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1001; background: rgba(17,24,39,0.9); border: 1px solid #334155; color: #e2e8f0; padding: 8px 14px; border-radius: 10px; font-weight: 800; box-shadow: 0 8px 24px rgba(0,0,0,.4);">
+      Pontos: <span id="pointsBarValue">0</span> / 1000
+    </div>
+    
+    <div id="devControls" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+        <button id="admBossBtn" style="display:block;border:none;text-decoration:none;background:#eee;color:#333;padding:8px 12px;border-radius:5px;font-weight:bold;cursor:pointer;">Acionar Boss [ADM]</button>
+        <button id="challengeBossBtn" style="display:block;border:none;text-decoration:none;background:#666;color:#999;padding:8px 12px;border-radius:5px;font-weight:bold;cursor:not-allowed;margin-top:5px;" disabled>DESAFIAR BOSS</button>
+    </div>
+    
+    <div class="game-container" id="game" style="display: block;">
+        <button href="./Trabalho.html" id="backBtn" class="btn-back" aria-label="Voltar ao menu">Voltar</button>
+        <canvas id="canvas" width="1120" height="640"></canvas>
+        
+        <div id="overlappingDiv"></div>
+        
+        <div id="userInterface"></div>
+        <div id="characterDialogueBox"></div>
+    </div>
+
+    <div id="starterCard" class="starter-card" aria-live="polite" aria-label="Inicial selecionado" style="display:none;">
+      <img id="starterCardImg" alt="Imagem do inicial" />
+      <div id="starterCardName"></div>
+    </div>
+    
+    <script src="../JavaScript/Colisao.js"></script> 
+    <script src="../JavaScript/battle.js"></script>
+    <script src="../JavaScript/Trabalho.js"></script> 
+
+    <script src="../JavaScript/game_page.js"></script>
+</body>
+</html>
