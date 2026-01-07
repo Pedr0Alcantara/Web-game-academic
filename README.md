@@ -29,4 +29,4 @@ Jogo web simples criado como parte de atividades acadêmicas, focado no aprendiz
 - JavaScript 
 
 ## Notas
-Projeto desenvolvido para fins educacionais.
+Projeto desenvolvido para fins educacionais. 
