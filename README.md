@@ -18,7 +18,7 @@ Project developed for educational purposes.
 -------------------------------------------------------------------------------------------------------------------------
 
 # Jogo Web (Projeto Acadêmico) 
-Projeto acadêmico desenvolvido durante a licenciatura em Ciência da Computação da FEI. 
+Projeto acadêmico desenvolvido durante a graduação em Ciência da Computação da FEI. 
 
 ## Descrição 
 Jogo web simples criado como parte de atividades acadêmicas, focado no aprendizado de fundamentos de desenvolvimento web.
